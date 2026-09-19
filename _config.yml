@@ -1,9 +1,3 @@
-# Welcome to Jekyll!
-#
-# Site configuration for Data & Human Space
-# Sanad Madi
-# NYU Abu Dhabi, Fall 2026
-
 # Site settings
 title: "Data & Human Space"
 email:
@@ -16,8 +10,6 @@ github_username: sanadmadi12
 
 # Visual theme
 minimal_mistakes_skin: air
-
-# Search
 search: true
 
 # Build settings
@@ -30,7 +22,7 @@ paginate: 5
 paginate_path: /page:num/
 timezone: Asia/Dubai
 
-# GitHub Pages URL
+# GitHub Pages
 url: "https://sanadmadi12.github.io"
 baseurl: "/DHS"
 
@@ -47,10 +39,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# Author profile
+# Author
 author:
   name: "Sanad Madi"
-  avatar: "/DHS/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/bio-photo.jpg"
   bio: "Engineering student at NYU Abu Dhabi exploring data, maps, technology, and human space."
   location: "Abu Dhabi, UAE"
 
