@@ -1,18 +1,18 @@
 main:
   - title: "Home"
-    url: /DHS/
+    url: /
 
   - title: "About"
-    url: /DHS/about/
+    url: /about/
 
   - title: "Assignment 1"
-    url: /DHS/A1/
+    url: /A1/
 
   - title: "Assignment 2"
-    url: /DHS/A2/
+    url: /A2/
 
   - title: "Assignment 3"
-    url: /DHS/A3/
+    url: /A3/
 
   - title: "Assignment 4"
-    url: /DHS/A4/
+    url: /A4/
