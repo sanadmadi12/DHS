@@ -1,34 +1,38 @@
-# ============================================================
-# DATA AND HUMAN SPACE
+# Welcome to Jekyll!
+#
+# Site configuration for Data & Human Space
 # Sanad Madi
-# Fall 2026
-# ============================================================
+# NYU Abu Dhabi, Fall 2026
 
-# Site Settings
+# Site settings
 title: "Data & Human Space"
-email: ""
+email:
 description: >-
   A digital portfolio by Sanad Madi exploring maps, geospatial data,
   human space, digital cartography, and spatial storytelling.
 
-url: "https://sanadmadi12.github.io"
-baseurl: "/DHS"
-
+twitter_username:
 github_username: sanadmadi12
 
-# Theme
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: default
+# Visual theme
+minimal_mistakes_skin: air
 
-# Site Features
+# Search
 search: true
 
-# Build Settings
+# Build settings
 markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+# Outputting
 permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 timezone: Asia/Dubai
+
+# GitHub Pages URL
+url: "https://sanadmadi12.github.io"
+baseurl: "/DHS"
 
 # Pages
 include:
@@ -43,10 +47,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# ============================================================
-# AUTHOR
-# ============================================================
-
+# Author profile
 author:
   name: "Sanad Madi"
   avatar: "/DHS/assets/images/bio-photo.jpg"
@@ -58,20 +59,14 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sanadmadi12"
 
-# ============================================================
-# FOOTER
-# ============================================================
-
+# Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sanadmadi12"
 
-# ============================================================
-# DEFAULT PAGE SETTINGS
-# ============================================================
-
+# Default settings
 defaults:
 
   # Posts
@@ -94,14 +89,12 @@ defaults:
       layout: single
       author_profile: true
 
-# ============================================================
-# ARCHIVES
-# ============================================================
-
+# Category archive
 category_archive:
   type: liquid
   path: /categories/
 
+# Tag archive
 tag_archive:
   type: liquid
   path: /tags/
