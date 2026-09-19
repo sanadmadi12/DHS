@@ -1,21 +1,18 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Home"
+    url: /DHS/
+
   - title: "About"
-    url: /about/
+    url: /DHS/about/
 
   - title: "Assignment 1"
-    url: /Assignment 1/
+    url: /DHS/A1/
 
   - title: "Assignment 2"
-    url: /Assignment 2/
+    url: /DHS/A2/
 
   - title: "Assignment 3"
-    url: /Assignment 3/
+    url: /DHS/A3/
 
   - title: "Assignment 4"
-    url: /Assignment 4/
+    url: /DHS/A4/
