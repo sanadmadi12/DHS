@@ -11,7 +11,6 @@ tags:
 
 # Mapping Features Across Egypt
 
-Geographic data helps explore how features are represented across a country, but maps depend on their underlying data and may not fully represent reality. For this assignment, I used GeoNames to map mosques, farms, and hospitals across Egypt, examining both their spatial distribution and what these patterns reveal about the dataset’s coverage, limitations, and unevenness.
 
 ## Background and Expectations
 
