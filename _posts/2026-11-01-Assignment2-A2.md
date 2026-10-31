@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "Assignment 2"
+title: "Assignment 2: Geoparsing and Mapping Places in Text"
 date: 2026-11-01
 ---
 
 ## Background and Expectations
+
 
 ## Interactive Map
 
