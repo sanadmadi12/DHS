@@ -1,15 +1,8 @@
 
 ---
 layout: single
-title: "Assignment 2: Manual Geocoding vs. Automated Geocoding"
+title: "Assignment 2"
 date: 2026-11-01
-categories:
-  - Assignments
-tags:
-  - DHS
-  - Geocoding
-  - Mapping
-  - Recogito
 ---
 
 ## Background and Expectations
