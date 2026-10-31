@@ -1,8 +1,10 @@
 ---
 layout: single
-title: "Assignment 2: Geoparsing and Mapping Places in Text"
+title: "Assignment 2: Manual Geocoding vs. Automated Geocoding"
 date: 2026-11-01
 ---
+
+## Manual Geocoding vs. Automated Geocoding
 
 ## Background and Expectations
 
