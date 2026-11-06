@@ -1,7 +1,8 @@
-
 main:
   - title: "Home"
-    url: /DHS/
+    url: /
 
-  - title: "Assignments"
-    url: /DHS/#assignments
+  - title: "About"
+    url: /about/
+
+ 
