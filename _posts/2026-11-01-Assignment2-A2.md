@@ -1,16 +1,13 @@
-
 ---
 layout: single
 title: "Assignment 2: Manual Geocoding vs. Automated Geocoding"
 date: 2026-11-01
-permalink: /Assignment2-A2/
-author_profile: false
-classes: wide
 ---
 
 ## Manual Geocoding vs. Automated Geocoding
 
 ## Background and Expectations
+
 
 ## Interactive Map
 
@@ -22,5 +19,7 @@ classes: wide
   </iframe>
 </div>
 
-### Map 1 Observations
+map 1 observations
+
+
 
