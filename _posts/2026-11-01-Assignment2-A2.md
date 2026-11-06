@@ -1,3 +1,4 @@
+
 ---
 layout: single
 title: "Assignment 2: Manual Geocoding vs. Automated Geocoding"
@@ -6,10 +7,25 @@ author_profile: false
 classes: wide
 ---
 
+<style>
+@media (min-width: 64em) {
+  .page {
+    width: 100% !important;
+    padding-right: 0 !important;
+    float: none !important;
+  }
+
+  .page__inner-wrap,
+  .page__content {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+</style>
+
 ## Manual Geocoding vs. Automated Geocoding
 
 ## Background and Expectations
-
 
 ## Interactive Map
 
@@ -22,6 +38,3 @@ classes: wide
 </div>
 
 map 1 observations
-
-
-
