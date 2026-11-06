@@ -19,35 +19,14 @@ date: 2026-11-01
   </iframe>
 </div>
 
-map 1 obseractions
+map 1 observations
 
 <div style="width:100%; height:70vh;">
   <iframe
-    src="{{ '/assets/Maps/1_The_Road_Map.html' | relative_url }}"
+    src="{{ '/assets/Maps/1_The_Road_Map.html' | relative_url }}#map=7/34.5/-81.5"
     style="width:100%; height:100%; border:0;"
-    loading="lazy"
-    onload="
-      setTimeout(() => {
-        const widget = this.contentWindow.HTMLWidgets.find('.leaflet.html-widget');
-        const map = widget.getMap();
-
-        map.fitBounds([
-          [29.5, -91.0],
-          [38.5, -75.5]
-        ], {animate: false});
-
-        map.dragging.disable();
-        map.scrollWheelZoom.disable();
-        map.touchZoom.disable();
-        map.doubleClickZoom.disable();
-        map.boxZoom.disable();
-        map.keyboard.disable();
-
-        if (map.zoomControl) {
-          map.removeControl(map.zoomControl);
-        }
-      }, 500);
-    ">
+    loading="lazy">
   </iframe>
 </div>
+
 
