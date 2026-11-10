@@ -16,6 +16,11 @@ For this assignment in Data and Human Space, we worked with the novel 1 the Road
        style="max-width: 100%; height: auto;">
 </div>
 
+<p style="text-align: center; font-size: 0.85em; color: gray;">
+  Figure 1: Excerpt from 1 the Road showing the AI-generated text, images, and geographic coordinates.
+</p>
+
+
 For this assignment, we focused on pages 41 to 140 of the novel, mapping locations using three methods. Firstly, students manually annotated locations using Recogito, assigning coordinates based on the text. Secondly, a Python script used spaCy’s Named Entity Recognition (NER) to identify place names and geopy to obtain coordinates. Lastly, an LLM-assisted approach organized geographic information into a dataset, also using spaCy and geopy. I annotated Section 5b at home for the first session, followed by Section 5a in the second session.
 
 By comparing the three datasets on an interactive map, I wanted to examine how humans and automated systems identify and interpret locations differently and how this affects the maps. I expect manual annotation to allow for more contextual interpretation, while automated methods might identify more locations but struggle with ambiguous references. Lastly, the image below shows a possible route from New York City to New Orleans, providing a baseline to examine the accuracy and reliability of the mapped data.
@@ -82,7 +87,7 @@ Lastly, the multiple levels of automation, from collecting data and generating t
 
 Some of the errors discussed above may be caused not only by the limitations of humans or automated methods, but also by the original text itself. After all, 1 the Road was generated using AI in 2017 and published in 2018, when text generation models were less advanced than today. As a result, some sentences are unclear or do not make complete sense, making it difficult for both humans and automated systems to identify geographic locations accurately. Moreover, the AI might have generated locations that do not exist or are misspelled, such as “Aikena” in Section 5a. Another possible source of error is the digitized version of the text used for the assignment. During the process of converting the book into digital text, small errors in spelling, punctuation, or missing commas could have been introduced. Even minor changes like these can affect how Recogito, spaCy, and the LLM recognize and interpret locations, potentially leading to incorrect coordinates. Therefore, some errors might originate from the original text or its digitization rather than the geocoding process itself.
 
-Moving on, questions remain about the accuracy of human annotation. Recogito could not identify all locations, so we had to enter some coordinates in the comments and later move them into the latitude and longitude columns when cleaning the CSV files. Moreover, different annotators might have made inconsistent decisions, rushed, selected incorrect locations, or reversed latitude and longitude. For example, although human annotation produced the most accurate path, zooming in reveals errors such as five school points arranged in a circle near Appling, Georgia, suggesting the car traveled in circles, along with a misplaced point in Europe.
+Moving on, questions remain about the accuracy of human annotation. Recogito could not identify all locations, so we had to enter some coordinates in the comments and later move them into the latitude and longitude columns when cleaning the CSV files. The cleaned manual annotation dataset is available [here]({{ '/assets/Extra/recogito_manual_cleaned.csv' | relative_url }}). Moreover, different annotators might have made inconsistent decisions, rushed, selected incorrect locations, or reversed latitude and longitude. For example, although human annotation produced the most accurate path, zooming in reveals errors such as five school points arranged in a circle near Appling, Georgia, suggesting the car traveled in circles, along with a misplaced point in Europe.
 
 <div style="text-align: center;">
   <img src="{{ '/assets/images/Map2.png' | relative_url }}"
@@ -99,5 +104,8 @@ Lastly, another factor affecting the maps is the editing of the original novel. 
 ## Conclusion
 
 Overall, this assignment showed how different geocoding methods can produce different maps from the same text. Manual annotation represented the car’s route most accurately because humans could interpret locations using the context of the journey, while automated methods identified more locations faster but often struggled with ambiguity. I also learned more about how these methods work, from manually identifying and selecting locations in Recogito to using Python libraries such as spaCy and geopy to recognize place names and assign coordinates, and how LLMs can add another level of interpretation. Beyond the data itself, the assignment helped me understand how these tools and systems work together, how errors can carry from one stage to another, and how the choices made throughout the process ultimately shape the maps we produce and our understanding of human space.
+
+
+
 
 
