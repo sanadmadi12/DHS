@@ -21,7 +21,7 @@ For this assignment in Data and Human Space, we worked with the novel 1 the Road
 </p>
 
 
-For this assignment, we focused on pages 41 to 140 of the novel, mapping locations using three methods. Firstly, students manually annotated locations using Recogito, assigning coordinates based on the text. Secondly, a Python script used spaCy’s Named Entity Recognition (NER) to identify place names and geopy to obtain coordinates. Lastly, an LLM-assisted approach organized geographic information into a dataset, also using spaCy and geopy. I annotated Section 5b at home for the first session, followed by Section 5a in the second session.
+For this assignment, we focused on mapping locations using three methods. Firstly, students manually annotated locations using Recogito, assigning coordinates based on the text. Secondly, a Python script used spaCy’s Named Entity Recognition (NER) to identify place names and geopy to obtain coordinates. Lastly, an LLM-assisted approach organized geographic information into a dataset, also using spaCy and geopy. I annotated Section 5b at home for the first session, followed by Section 5a in the second session.
 
 By comparing the three datasets on an interactive map, I wanted to examine how humans and automated systems identify and interpret locations differently and how this affects the maps. I expect manual annotation to allow for more contextual interpretation, while automated methods might identify more locations but struggle with ambiguous references. Lastly, the image below shows a possible route from New York City to New Orleans, providing a baseline to examine the accuracy and reliability of the mapped data.
 
@@ -30,6 +30,12 @@ By comparing the three datasets on an interactive map, I wanted to examine how h
        alt="Possible route from New York City to New Orleans"
        style="max-width: 100%; height: auto;">
 </div>
+
+
+<p style="text-align: center; font-size: 0.85em; color: gray;">
+  Figure 2: Possible driving route from New York City to New Orleans, used as a reference for evaluating the geocoded locations.
+</p>
+
 
 ## Interactive Map
 
@@ -40,6 +46,12 @@ By comparing the three datasets on an interactive map, I wanted to examine how h
     loading="lazy">
   </iframe>
 </div>
+
+
+<p style="text-align: center; font-size: 0.85em; color: gray;">
+  Figure 3: Interactive Leaflet map comparing manual (Recogito), automatic (spaCy + geopy), and LLM-assisted geocoding, with three selectable layers.
+</p>
+
 
 ## Observations
 
@@ -71,6 +83,14 @@ Comparing the three methods, I noticed that all identified the general route fro
        style="max-width: 100%; height: auto;">
 </div>
 
+
+
+<p style="text-align: center; font-size: 0.85em; color: gray;">
+  Figure 4: Comparison of spaCy (red) and LLM (blue) geocoded points between North Carolina and Georgia, showing a higher concentration of LLM points along the route.
+</p>
+
+
+
 Interestingly, despite identifying more locations, many were still incorrectly placed, showing that more points do not necessarily mean better accuracy. Overall, manual annotation appears more reliable, while automated methods provide greater coverage but introduce more geographic inaccuracies.
 
 Looking at the mismatches, I believe many errors are caused by ambiguous or incomplete geographic information rather than occurring randomly. For example, in Section 5.2, the novel mentions “BP: a convenience store in Crawfordville” without specifying the exact location. This makes it difficult for both humans and automated systems to select the correct coordinates. It also shows how commercial locations, such as gas stations, are more prone to disagreement than major cities, which are generally easier to identify. Overall, these errors appear to follow patterns related to the type and completeness of geographic information.
@@ -95,6 +115,14 @@ Moving on, questions remain about the accuracy of human annotation. Recogito cou
        style="max-width: 100%; height: auto;">
 </div>
 
+
+
+<p style="text-align: center; font-size: 0.85em; color: gray;">
+  Figure 5: Five manually geocoded school locations arranged in a circle near Appling, Georgia, illustrating possible annotation errors.
+</p>
+
+
+
 Moreover, since the journey took place nine years ago, some businesses might have closed or changed names, making them difficult to find on Google Maps. Lastly, I questioned whether to prioritize the text or the actual journey when annotating locations, such as Massachusetts in Section 7, which might be an inaccurate AI-generated reference outside the car’s route.
 
 Another important factor is how Goodwin's Wordcar collected the original data. As McDowell discusses, the car used the Foursquare API to gather information about nearby businesses, particularly gas stations and fast-food restaurants. This creates a bias toward commercial locations rather than representing all aspects of the surrounding environment. As a result, areas with fewer businesses or limited coverage in Foursquare might be underrepresented in the novel. This shows how the original data collection already influences what locations are included and how human space is represented, even before the geocoding process begins.
@@ -107,5 +135,4 @@ Overall, this assignment showed how different geocoding methods can produce diff
 
 
 
-
-
+**Ready For Grading**
